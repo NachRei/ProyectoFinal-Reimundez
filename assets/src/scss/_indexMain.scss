@@ -46,11 +46,12 @@
         font-family: $fuentePrincipal;
         font-style: italic;
         font-weight: bold;
+        color: $colorTituloIndex;
+        background-color: #1c285ea2;
+        border-radius: 20px;
+        padding: 5px;
     }
     
-    .glasses-title , .sunglasses-title , .contact-lenses-title {
-        color: $colorTituloIndex;
-    }
     
     @media (min-width:500px) {
     

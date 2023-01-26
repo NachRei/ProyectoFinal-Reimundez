@@ -250,9 +250,10 @@
   font-family: "Lora", serif;
   font-style: italic;
   font-weight: bold;
-}
-.index .glasses-title, .index .sunglasses-title, .index .contact-lenses-title {
   color: #39b9ef;
+  background-color: rgba(28, 40, 94, 0.6352941176);
+  border-radius: 20px;
+  padding: 5px;
 }
 @media (min-width: 500px) {
   .index .sunglasses {
