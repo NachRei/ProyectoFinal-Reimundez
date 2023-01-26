@@ -1,0 +1,26 @@
+.loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: $colorLoading;
+    z-index: 30000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        color: $colorFondoTarjetas;
+        font-size: 64px;
+        animation-name: rotar;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

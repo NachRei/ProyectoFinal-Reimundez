@@ -1,0 +1,33 @@
+.grilla {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: space-around;
+    .tarjeta-lentes {
+        margin: 10px;
+        border: 2px solid $colorPrincipal;
+        @extend %tarjeta;
+        &:hover {
+            transform: scale(1.02);
+        }
+        .tarjeta-lentes-img {
+            width: 250px;
+            height: 40%;
+            overflow: hidden;
+            object-fit: cover; 
+        }
+        .tarjeta-lentes-title {
+            margin:0;
+        }
+        .tarjeta-lentes-desc {
+            margin:0;
+            }
+        .tarjeta-lentes-btn{
+            margin: 3px;
+            padding: 8px 40px;
+            margin-top: 10px;
+            @include button($colorBotonComprar,$colorFondoTarjetas,$colorBotonIndex,$colorBotonIndex);
+        }
+    }
+}

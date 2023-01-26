@@ -1,0 +1,15 @@
+%tarjeta{
+    width: 300px;
+    height: 400px;
+    background-color: $colorFondoTarjetas;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 9px 11px -1px $colorSombracaja;
+    -webkit-box-shadow: 5px 9px 11px -1px $colorSombracaja;
+    -moz-box-shadow: 5px 9px 11px -1px $colorSombracaja;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 1.5s;
+}

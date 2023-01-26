@@ -1,0 +1,194 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    a {
+        text-decoration: none;
+        color: $colorFondoTarjetas;
+    }
+    .nav1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $colorBotonSecundarioIndex;
+        .nav-logo {
+            padding: 10px 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                width: 100px;
+                height: 80px;
+                object-fit: cover;
+            }
+        }
+        .nav-title {
+            font-size: 50px;
+            font-family: $fuentePrincipal;
+            font-style: italic;
+        }
+        .nav-icons {
+            margin: 20px;
+            font-size: 30px;
+            .nav-user , .nav-cart {
+                margin: 10px;
+            }
+        }
+    }
+    .navegador {
+        background-color: $colorBotonSecundarioIndex;
+        font-family: $fuentePrincipal;
+        font-style: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        > ul {
+            > li {
+                display: inline-block;
+                > ul {
+                    display: none;
+                    background-color: $colorBotonSecundarioIndex;
+                    list-style: none;
+                }
+                a {
+                    display: block;
+                    padding: 20px 20px;
+                    text-decoration: none;
+                    color: $colorFondoTarjetas;
+                    font-size: 18px;
+                }
+                &:hover ul {
+                    display: block;
+                    position: absolute;
+                }
+            }    
+        }
+    }
+    #menu , #menu-check {
+        display: none;
+    }
+    @media (max-width:992px) {
+
+        .nav-logo {
+            img{
+                width: 80px;
+                height: 64px;
+            }    
+        }
+    
+        .nav-title {
+            font-size: 40px;
+        }
+    
+        .nav-icons {
+            font-size: 25px;
+        }
+    
+        .navegador {
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width:768px) {
+        
+        #menu-check:not(:checked) ~ .navegador {
+            display: none;
+        }
+    
+        #menu-check:checked ~ .navegador {
+            display: block;
+        }
+    
+        #menu {
+            display: block;
+            color: $colorFondoTarjetas;
+            background-color: $colorBotonSecundarioIndex;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px;
+            z-index: 300;
+        }
+    
+        #menu-cerrar {
+            display: none;
+        }
+    
+        #menu-check:checked ~ label #menu-abrir {
+            display: none;
+        }
+    
+        #menu-check:checked ~ label #menu-cerrar {
+            display: block;
+        }
+    
+        .navegador {
+            top: 136px;
+            left: 0;
+            height: 100%;
+            opacity: 0.85;
+            font-size: 25px;
+            ul {
+                display: block;
+                text-align: left;
+                li {
+                    display: block;
+                    text-align: left;
+                }
+            } 
+        }
+    }    
+    
+    @media (max-width:576px) {
+       
+        .nav-logo {
+            img {
+                width: 64px;
+                height: 51px;
+            }    
+        }
+    
+        .nav-title {
+            font-size: 30px;
+        }
+    
+        .nav-icons {
+            font-size: 20px;
+        }
+    
+        .navegador {
+            top: 123px;
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }    
+            }
+        }
+    }
+    
+    @media (max-width:450px) {
+    
+        .nav1 {
+            justify-content: center;
+            .nav-icons {
+                font-size: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 100%;
+            }
+        }
+        .navegador {
+            top: 212px;
+        }
+    }
+}
+

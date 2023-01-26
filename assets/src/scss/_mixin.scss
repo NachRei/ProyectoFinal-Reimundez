@@ -1,0 +1,13 @@
+@mixin button($background,$color,$backgroundhover,$borderhover){
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid $colorBorde;
+    background-color: $background;
+    color: $color;
+    font-style: bold;
+    font-family:$fuentePrincipal;
+    &:hover {
+        background-color: $backgroundhover;
+        border: 2px solid $borderhover;
+    }
+}

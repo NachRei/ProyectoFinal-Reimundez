@@ -1,0 +1,87 @@
+.marcas {
+    background-color: $colorFondo;
+    .main-marcas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90px 650px 650px;
+        gap: 20px;
+        grid-template-areas:    "title title"
+                                "marca1  marca2"
+                                "marca3  marca4";
+    }
+    
+    .title-marcas {
+        grid-area: title;
+        font-size: 45px;
+        font-family: $fuentePrincipal;
+        padding: 10px;
+        margin: 10px;
+        justify-self: start;
+    }
+    
+    .marca1-img , .marca2-img , .marca3-img, .marca4-img {
+        width: 200px;
+        height: 140px;
+        object-fit: cover;
+    }
+    
+    .marca1 , .marca2 , .marca3 , .marca4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .marca1 {
+        grid-area: marca1;
+    }
+    
+    .marca2 {
+        grid-area: marca2;
+    }
+    
+    .marca3 {
+        grid-area: marca3;
+    }
+    
+    .marca4 {
+        grid-area: marca4;
+    }
+    
+    @media (max-width:1200px){
+    
+        .main-marcas {
+            grid-template-columns: 1fr;
+            grid-template-rows: 90px 650px 650px 650px 650px;
+            grid-template-areas:    "title"
+                                    "marca1"  
+                                    "marca2"
+                                    "marca3"
+                                    "marca4";
+        }
+        
+    }
+    
+    @media (max-width:768px) {
+    
+        .main-marcas {
+            grid-template-columns: 1fr;
+            grid-template-rows: 70px 400px 400px 400px 400px;
+            grid-template-areas:    "title"
+                                    "marca1"  
+                                    "marca2"
+                                    "marca3"
+                                    "marca4";
+        }
+        
+        .title-marcas {
+            font-size: 30px;
+        }
+        
+        .video iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+

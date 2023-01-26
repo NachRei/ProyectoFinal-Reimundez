@@ -1,0 +1,84 @@
+.quienes-somos{
+    background-color: $colorFondo;
+    .container-img , .container-img1 {
+        width: 450px;
+        height: 300px;
+    }
+    
+    .main-quienes-somos {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 1fr 1fr;
+        gap: 20px;
+        grid-template-areas:    "title title"
+                                "img1  text1"
+                                "text2 img2";
+        .page-title-quienes-somos {
+            grid-area: title;
+            align-self: start;
+            justify-self: start;
+            margin-left: 20px;
+            font-size: 45px;
+            font-family:$fuentePrincipal;
+        }
+        .container-img, .container-img1 {
+            align-self: center;
+            justify-self: center;
+        }
+        .container-img {
+            grid-area: img1;
+            
+        }
+        .container-img1 {
+            grid-area: img2;
+        }
+        .container-desc, .container-desc1 {
+            align-self: center;
+            justify-content: center;
+            padding: 40px;
+            font-size: 18px;
+        }
+        .container-desc {
+            grid-area: text1;
+        }
+        .container-desc1 {
+            grid-area: text2;
+        }                        
+    }
+    @media (max-width:992px){
+    
+        .main-quienes-somos {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 70px 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            grid-template-areas:    "title"
+                                    "img1"  
+                                    "text1"
+                                    "img2"
+                                    "text2";
+            .page-title-quienes-somos {
+                font-size: 40px;
+                font-family: $fuentePrincipal;
+            }
+            .container-desc1 , .container-desc {
+                padding: 20px;
+            }                        
+        }
+    }
+    
+    @media (max-width:992px){
+    
+        .container-img , .container-img1 {
+            width: 350px;
+            height: 200px;
+        }
+    
+        .container-desc1 , .container-desc {
+            padding: 10px;
+        }
+    }
+}
+

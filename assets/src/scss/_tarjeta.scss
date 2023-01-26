@@ -1,0 +1,41 @@
+.tarjeta-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px 0;
+    .tarjeta {
+        border: 2px solid $colorBorde;
+        margin: 10px 0;
+        @extend %tarjeta;
+        &:hover {
+            transform: scale(1.1);
+        }
+        .tarjeta-img {
+            width: 250px;
+            height: 40%;
+            overflow: hidden;
+            object-fit: cover; 
+        }
+        .tarjeta-btn{
+            padding: 7px;
+            @include button($colorBotonIndex,$colorFondoTarjetas,$colorPrincipal,$colorPrincipal);
+        }
+    }
+    @media (max-width:1300px) {
+
+        .tarjeta{
+            margin: 20px 80px;
+        }
+    
+    }
+    
+    @media (max-width:500px) {
+    
+        .tarjeta{
+            margin: 20px 10px;
+        }
+        
+    }
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comunicate con Óptica Hawk para un mejor asesoramiento en base a tus necesidades">
+    <meta name="keywords" content="OPTICA, FORMULARIO, CONTACTO">
+    <title>Contacto - Optica Hawk</title>
+    <link rel="shortcut icon" href="../assets/img/optica-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="contact">
+    <div class="loading">
+        <i class="fa-solid fa-spinner"></i>
+    </div>
+    <header class="nav">
+        <div class="nav1">
+            <a href="../index.html" class="nav-logo"><img src="../assets/img/optica-logo.jpg" alt="Logo Óptica Hawk"></a>
+            <a href="../index.html"><h1 class="nav-title">Óptica Hawk</h1></a>
+            <div class="nav-icons">
+                <a href="" class="nav-user"><i class="fa-solid fa-user user"></i></a>
+                <a href="" class="nav-cart"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>    
+        </div>
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" id="menu">
+            <span id="menu-abrir"><i class="fa-sharp fa-solid fa-bars"></i></span>
+            <span id="menu-cerrar"><i class="fa-sharp fa-solid fa-x"></i></span>
+        </label>
+        <nav class="navegador">
+            <ul class="navegador-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./lentes.html">Lentes</a>
+                    <ul>
+                        <li><a href="./lentes.html">Lentes de Receta</a></li>
+                        <li><a href="./lentes.html">Lentes de Sol</a></li>
+                        <li><a href="./lentes.html">Lentes de Contacto</a></li>
+                    </ul>
+                </li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
+                <li><a href="./marcas.html">Marcas</a></li>
+                <li><a href="./quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <h2 class="title-contacto">Contacto</h2>
+    <main class="main-contacto">
+        <div class="formulario">
+            <form class="form-contacto">
+                <label class="label">Nombre* <input class="control-form1" type="text" name="nombre" placeholder="Ingresa tu nombre" required></label>
+                <label class="label">Apellido* <input class="control-form1" type="text" name="apellido" placeholder="Ingresa tu apellido" required></label>
+                <label class="label">Teléfono <input class="control-form1" type="number" name="tel" placeholder="Número de teléfono"></label>
+                <label class="label">Email* <input class="control-form1" type="email" name="tel" placeholder="ejemplo@email.com" required></label>
+                <label class="label">Mensaje* <textarea class="control-form2" cols="30" rows="10" name="mensaje" placeholder="Deje aquí su mensaje" required></textarea></label>
+                <input class="control-btn" type="submit" name="Enviar">
+            </form>  
+        </div>
+        <div class="info">
+            <p class="location__desc">Tel: 2XXXXXXX - Cel: 09XXXXXXX</p>
+            <p class="location__desc">Correo: nombreoptica@nombreoptica.com</p>
+            <p class="location__desc">Horario: Lunes a Viernes de 9:30 a 19:30 hrs. y Sábados de 9 a 13 hrs.</p>
+            <p class="location__desc">Dirección: Calle A 1111 esquina Calle B</p>
+            <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13094.956638504473!2d-56.160655408520505!3d-34.862780896140585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa0cae26c29546da!2sAntel%20Arena!5e0!3m2!1ses!2suy!4v1669872840906!5m2!1ses!2suy" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer class="foot">
+        <div class="info">
+            <p class="info-tel">Tel: 2XXXXXXX - Cel: 09XXXXXXX</p>
+            <p class="info-email">Correo: nombreoptica@nombreoptica.com</p>
+            <p class="info-horario">Horario: Lunes a Viernes de 9:30 a 19:30 hrs. y Sábados de 9 a 13 hrs.</p>
+            <p class="info dir">Dirección: Calle A 1111 esquina Calle B</p>
+        </div>    
+        <div class="legal">
+            <p><a href="">Términos y Condiciones</a></p>
+            <p><a href="">Politica de Privacidad</a></p>
+            <p><a href="">Trabaja con Nosotros</a></p>
+        </div>
+        <div class="sub">
+            <p class="sub-subtitle">Recibe información de nuetras ofertas:</p>
+            <input type="email" name="correo" class="sub-input" placeholder="Ingrese su email">
+            <button class="sub-btn">Suscribirse</button>    
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
