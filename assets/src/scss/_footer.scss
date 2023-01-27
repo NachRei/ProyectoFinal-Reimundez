@@ -38,6 +38,19 @@
                 border: 2px solid $colorSecundarioSuscribirse;
             }
         }
+        .sub-subtitle {
+            margin: 5px 0;
+        }
+        .redes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 5px 0 0 0;
+            a {
+                color: $colorFondoTarjetas;
+                font-size: 25px;
+            }
+        }
     }
     @media (max-width:1200px) {
     
@@ -56,6 +69,11 @@
             p{
                 padding: 5px;
                 margin: 3px;
+            }
+            .redes{
+                a {
+                    padding: 8px;
+                }
             }
         }
     

@@ -676,6 +676,19 @@
   background-color: #920000;
   border: 2px solid #920000;
 }
+.foot .sub .sub-subtitle {
+  margin: 5px 0;
+}
+.foot .sub .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5px 0 0 0;
+}
+.foot .sub .redes a {
+  color: #fff;
+  font-size: 25px;
+}
 @media (max-width: 1200px) {
   .foot .foot {
     font-size: 13px;
@@ -691,6 +704,9 @@
   .foot .sub p {
     padding: 5px;
     margin: 3px;
+  }
+  .foot .sub .redes a {
+    padding: 8px;
   }
 }
 @media (max-width: 768px) {
