@@ -664,6 +664,7 @@
 }
 .foot .legal p {
   padding: 4px;
+  margin: 0;
 }
 .foot .sub p {
   padding: 5px 0px;
@@ -696,6 +697,9 @@
 .foot .sub .redes a {
   color: #fff;
   font-size: 25px;
+}
+.foot .info p {
+  margin: 0;
 }
 @media (max-width: 1200px) {
   .foot .foot {

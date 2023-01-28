@@ -17,6 +17,7 @@
         }
         p {
             padding: 4px;
+            margin: 0;
         }
     }
     .sub {
@@ -51,6 +52,11 @@
                 color: $colorFondoTarjetas;
                 font-size: 25px;
             }
+        }
+    }
+    .info { 
+        p {
+            margin: 0;
         }
     }
     @media (max-width:1200px) {
