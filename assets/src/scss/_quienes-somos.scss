@@ -4,7 +4,6 @@
         width: 450px;
         height: 300px;
     }
-    
     .main-quienes-somos {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -38,7 +37,8 @@
             align-self: center;
             justify-content: center;
             padding: 40px;
-            font-size: 18px;
+            font-size: 25px;
+            text-align: center;
         }
         .container-desc {
             grid-area: text1;
@@ -65,6 +65,8 @@
             }
             .container-desc1 , .container-desc {
                 padding: 20px;
+                font-size: 20px;
+                text-align: center;
             }                        
         }
     }
