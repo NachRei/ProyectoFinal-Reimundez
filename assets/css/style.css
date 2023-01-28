@@ -656,6 +656,7 @@
   color: #fff;
   font-family: "Lora", serif;
   font-size: 15px;
+  text-align: center;
 }
 .foot .legal a {
   text-decoration: none;
@@ -714,6 +715,9 @@
   }
   .foot .sub .redes a {
     padding: 8px;
+  }
+  .foot .sub, .foot .info, .foot .legal {
+    margin: 5px 0;
   }
 }
 @media (max-width: 768px) {

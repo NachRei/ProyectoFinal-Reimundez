@@ -9,6 +9,7 @@
     color: $colorFondoTarjetas;
     font-family: $fuentePrincipal;
     font-size: 15px;
+    text-align: center;
     .legal {
         a {
             text-decoration: none;
@@ -75,6 +76,9 @@
                     padding: 8px;
                 }
             }
+        }
+        .sub , .info, .legal{
+            margin: 5px 0;
         }
     
     }
